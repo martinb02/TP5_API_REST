@@ -25,7 +25,7 @@ Este proyecto es una API REST desarrollada con Spring Boot para gestionar entida
 git clone https://github.com/usuario/persona-api.git
 
 ```
-##Configurar la base de datos:
+## Configurar la base de datos:
 
 El proyecto está configurado para usar MySQL o H2. Si prefieres MySQL, actualiza las propiedades de la base de datos en application.properties:
 
