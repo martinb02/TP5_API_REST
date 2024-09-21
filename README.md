@@ -29,28 +29,28 @@ git clone https://github.com/usuario/persona-api.git
 
 El proyecto está configurado para usar MySQL o H2. Si prefieres MySQL, actualiza las propiedades de la base de datos en application.properties:
 
-spring.datasource.url=jdbc:mysql://localhost:3306/persona_db
-spring.datasource.username=root
-spring.datasource.password=tu_contraseña
+    spring.datasource.url=jdbc:mysql://localhost:3306/persona_db
+    spring.datasource.username=root
+    spring.datasource.password=tu_contraseña
 
 Para usar H2, simplemente configura el scope de H2 en runtime en el archivo pom.xml y ejecuta el proyecto directamente.
 
-##Compilar el proyecto:
+## Compilar el proyecto:
 
-mvn clean install
+    mvn clean install
 
-##Ejecutar la aplicación:
+## Ejecutar la aplicación:
 
-mvn spring-boot:run
+    mvn spring-boot:run
 
-Estructura del Proyecto
+## Estructura del Proyecto
 
     Entities: Contiene las entidades de la aplicación, incluyendo Persona, Domicilio, Localidad, Libro, y Autor, cada una de ellas auditada con Hibernate Envers.
     Controllers: Controladores REST que exponen los endpoints de las entidades.
     Services: Implementaciones de la lógica de negocio.
     Repositories: Repositorios que extienden JpaRepository para realizar las operaciones CRUD.
 
-Endpoints
+## Endpoints
 Persona
 
     GET /api/v1/personas - Obtener todas las personas
@@ -91,7 +91,7 @@ Autor
     PUT /api/v1/autores/{id} - Actualizar un autor por ID
     DELETE /api/v1/autores/{id} - Eliminar un autor por ID
 
-Dependencias
+## Dependencias
 
 Las principales dependencias utilizadas en el proyecto son:
 
